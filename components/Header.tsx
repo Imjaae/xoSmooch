@@ -78,9 +78,9 @@ const Category = styled.div`
   gap: 30px;
   padding: 10px;
   margin-left: 90px;
-  transition: 0.2s;
   :hover {
     color: tomato;
+    transition: 0.4s;
   }
 `;
 
