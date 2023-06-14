@@ -8,16 +8,18 @@ export default function Home() {
       <Wrap>
         <Header />
       </Wrap>
-      <Div>메인페이지</Div>
+      <Div>Main Page</Div>
     </div>
   );
 }
 
 const Wrap = styled.div`
   width: 100vw;
-  height: 250px;
+  height: 400px;
 `;
 
 const Div = styled.div`
-  color: red;
+  color: tomato;
+  font-size: 140px;
+  font-weight: 100;
 `;
