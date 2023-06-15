@@ -178,7 +178,7 @@ const Category = styled.div`
   display: flex;
   flex-direction: row;
   gap: 1.4vw;
-  padding: 30px 0px 0px 4vw;
+  padding: 30px 0px 0px 4.9vw;
   :hover {
     color: tomato;
     transition: 0.4s;
