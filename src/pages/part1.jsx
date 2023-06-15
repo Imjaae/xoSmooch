@@ -25,6 +25,38 @@ export default function Part1() {
             <ProductInfo>Som</ProductInfo>
             <Prise>KRW 30,000</Prise>
           </Products>
+          <Products>
+            <Imaged src="/product/1.3.webp" />
+            <ProductInfo>Maum</ProductInfo>
+            <Prise>KRW 30,000</Prise>
+          </Products>
+          <Products>
+            <Imaged src="/product/1.4.webp" />
+            <ProductInfo>Bangwool</ProductInfo>
+            <Prise>KRW 30,000</Prise>
+          </Products>
+        </Div>
+        <Div>
+          <Products>
+            <Imaged src="/product/1.4.webp" />
+            <ProductInfo>Bangwool</ProductInfo>
+            <Prise>KRW 30,000</Prise>
+          </Products>
+          <Products>
+            <Imaged src="/product/1.3.webp" />
+            <ProductInfo>Maum</ProductInfo>
+            <Prise>KRW 30,000</Prise>
+          </Products>
+          <Products>
+            <Imaged src="/product/1.2.webp" />
+            <ProductInfo>Som</ProductInfo>
+            <Prise>KRW 30,000</Prise>
+          </Products>
+          <Products>
+            <Imaged src="/product/1.1.webp" />
+            <ProductInfo>Yang</ProductInfo>
+            <Prise>KRW 63,000</Prise>
+          </Products>
         </Div>
       </div>
       <Footer />

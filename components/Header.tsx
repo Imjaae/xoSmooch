@@ -67,18 +67,28 @@ export default function Header() {
           </Category>
         </CategoryWrap>
         <Title>
-          <Smooch>Xo Smooch</Smooch>
+          <Link
+            href="/"
+            style={{
+              textDecoration: "none",
+              cursor: "pointer",
+            }}
+          >
+            <Smooch>Xo Smooch</Smooch>
+          </Link>
+        </Title>
+        <LoginWrap>
           <Login>search</Login>
           <Login>login</Login>
           <Login>cart</Login>
-        </Title>
+        </LoginWrap>
       </HeaderWrap>
     </Wrap>
   );
 }
 
 const HeaderWrap = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 200px;
   display: flex;
   flex-direction: row;
@@ -92,17 +102,26 @@ const CategoryWrap = styled.div`
 `;
 
 const Smooch = styled.div`
-  margin: 0 22vw 0 4vw;
-  font-size: 6rem;
+  font-size: 6vw;
   font-family: "Jura";
   font-style: normal;
   font-weight: 400;
+  color: #334fb4;
 `;
 
 const Wrap = styled.div`
-  width: 95vw;
-  /* position: fixed; */
+  margin-top: 60px;
   z-index: 1000;
+`;
+
+const LoginWrap = styled.div`
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
 `;
 
 const Login = styled.div`
@@ -120,21 +139,23 @@ const Login = styled.div`
 `;
 
 const Title = styled.div`
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2vw 4.8vw 2vw 2vw;
+  width: 40%;
   align-items: flex-end;
   color: #334fb4;
+  text-align: center;
+  :hover {
+    cursor: pointer;
+    scale: 1.06;
+    transition: 0.9s;
+  }
 `;
 
 const SubTitle = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 5vw;
-  padding-left: 3vw;
-  margin-top: -5px;
+  gap: 4vw;
+  padding-left: 5vw;
+  margin-top: -21px;
   color: #334fb4;
   height: 70%;
   align-items: flex-end;
@@ -157,7 +178,7 @@ const Category = styled.div`
   display: flex;
   flex-direction: row;
   gap: 1.4vw;
-  padding: 20px 0px 0px 3vw;
+  padding: 30px 0px 0px 4vw;
   :hover {
     color: tomato;
     transition: 0.4s;
@@ -176,5 +197,6 @@ const Part = styled.div`
     font-weight: 300;
     transition: 0.6s;
     cursor: pointer;
+    color: tomato;
   }
 `;
