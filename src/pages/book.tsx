@@ -1,5 +1,6 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
+import Link from "next/link";
 import React, { useState } from "react";
 import styled from "styled-components";
 
@@ -16,14 +17,20 @@ export default function Part1() {
       >
         <Div>
           <Products>
-            <Imaged src="/product/1.1.webp" />
-            <ProductInfo>Yang</ProductInfo>
-            <Prise>KRW 63,000</Prise>
+            <Imaged src="/book/1.webp" />
+          </Products>
+
+          <Products>
+            <Imaged src="/book/2.webp" />
           </Products>
           <Products>
-            <Imaged src="/product/1.2.webp" />
-            <ProductInfo>Som</ProductInfo>
-            <Prise>KRW 30,000</Prise>
+            <Imaged src="/book/3.webp" />
+          </Products>
+          <Products>
+            <Imaged src="/book/4.webp" />
+          </Products>
+          <Products>
+            <Imaged src="/book/5.webp" />
           </Products>
         </Div>
       </div>
@@ -34,11 +41,9 @@ export default function Part1() {
 
 const Div = styled.div`
   display: flex;
-  /* overflow: scroll;s */
+  flex-direction: column;
   margin: 0 auto;
   width: 90vw;
-  height: 40vh;
-  margin-bottom: 130px;
 `;
 
 const Products = styled.div`
@@ -54,7 +59,7 @@ const Products = styled.div`
 `;
 
 const Imaged = styled.img`
-  width: 80%;
+  width: 50%;
   height: 80%;
   object-fit: contain;
   margin: auto;

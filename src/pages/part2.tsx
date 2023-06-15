@@ -1,5 +1,6 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
+import Link from "next/link";
 import React, { useState } from "react";
 import styled from "styled-components";
 
@@ -17,45 +18,101 @@ export default function Part2() {
         <Div>
           <Products>
             <Imaged src="/product/2.1.webp" />
-            <ProductInfo>Yang</ProductInfo>
-            <Prise>KRW 63,000</Prise>
+            <Link
+              style={{
+                textDecoration: "none",
+              }}
+              href="/detail"
+            >
+              <ProductInfo>Yang</ProductInfo>
+              <Prise>KRW 63,000</Prise>
+            </Link>
           </Products>
           <Products>
             <Imaged src="/product/2.2.webp" />
-            <ProductInfo>Som</ProductInfo>
-            <Prise>KRW 30,000</Prise>
+            <Link
+              style={{
+                textDecoration: "none",
+              }}
+              href="/detail"
+            >
+              <ProductInfo>Som</ProductInfo>
+              <Prise>KRW 30,000</Prise>
+            </Link>
           </Products>
           <Products>
             <Imaged src="/product/2.3.webp" />
-            <ProductInfo>Maum</ProductInfo>
-            <Prise>KRW 30,000</Prise>
+            <Link
+              style={{
+                textDecoration: "none",
+              }}
+              href="/detail"
+            >
+              <ProductInfo>Maum</ProductInfo>
+              <Prise>KRW 30,000</Prise>
+            </Link>
           </Products>
           <Products>
             <Imaged src="/product/2.4.webp" />
-            <ProductInfo>Bangwool</ProductInfo>
-            <Prise>KRW 30,000</Prise>
+            <Link
+              style={{
+                textDecoration: "none",
+              }}
+              href="/detail"
+            >
+              <ProductInfo>Bangwool</ProductInfo>
+              <Prise>KRW 30,000</Prise>
+            </Link>
           </Products>
         </Div>
         <Div>
           <Products>
             <Imaged src="/product/2.4.webp" />
-            <ProductInfo>Bangwool</ProductInfo>
-            <Prise>KRW 30,000</Prise>
+            <Link
+              style={{
+                textDecoration: "none",
+              }}
+              href="/detail"
+            >
+              <ProductInfo>Bangwool</ProductInfo>
+              <Prise>KRW 30,000</Prise>
+            </Link>
           </Products>
           <Products>
             <Imaged src="/product/2.3.webp" />
-            <ProductInfo>Maum</ProductInfo>
-            <Prise>KRW 30,000</Prise>
+            <Link
+              style={{
+                textDecoration: "none",
+              }}
+              href="/detail"
+            >
+              <ProductInfo>Maum</ProductInfo>
+              <Prise>KRW 30,000</Prise>
+            </Link>
           </Products>
           <Products>
             <Imaged src="/product/2.2.webp" />
-            <ProductInfo>Som</ProductInfo>
-            <Prise>KRW 30,000</Prise>
+            <Link
+              style={{
+                textDecoration: "none",
+              }}
+              href="/detail"
+            >
+              <ProductInfo>Som</ProductInfo>
+              <Prise>KRW 30,000</Prise>
+            </Link>
           </Products>
           <Products>
             <Imaged src="/product/2.1.webp" />
-            <ProductInfo>Yang</ProductInfo>
-            <Prise>KRW 63,000</Prise>
+            <Link
+              style={{
+                textDecoration: "none",
+              }}
+              href="/detail"
+            >
+              <ProductInfo>Yang</ProductInfo>
+              <Prise>KRW 63,000</Prise>
+            </Link>
           </Products>
         </Div>
       </div>
