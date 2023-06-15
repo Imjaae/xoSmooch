@@ -1,123 +1,116 @@
+import Footer from "components/Footer";
+import Header from "components/Header";
 import React, { useState } from "react";
 import styled from "styled-components";
 
 export default function Part3() {
-  const [isHover, setIsHover] = useState(false);
-
   return (
-    <Wrap>
-      <Title>
-        <Smooch>Xo Smooch</Smooch>
-        <Login>search</Login>
-        <Login>login</Login>
-        <Login>cart</Login>
-      </Title>
-      <SubTitle>
-        <Shop
-          onClick={() => {
-            setIsHover(!isHover);
-          }}
-        >
-          Shop
-        </Shop>
-        <Shop>Contact</Shop>
-      </SubTitle>
-
-      <Category>
-        {isHover ? (
-          <>
-            <Part>part1</Part>
-            <Part>part2</Part>
-            <Part>part3</Part>
-            <Part>part4</Part>
-            <Part>book</Part>
-          </>
-        ) : null}
-      </Category>
-    </Wrap>
+    <div>
+      <Header />
+      <div
+        style={{
+          paddingTop: 50,
+          paddingBottom: 50,
+          boxShadow: "inset 0px 29px 40px rgba(0, 0, 0, 0.02)",
+        }}
+      >
+        <Div>
+          <Products>
+            <Imaged src="/product/3.1.webp" />
+            <ProductInfo>Yang</ProductInfo>
+            <Prise>KRW 63,000</Prise>
+          </Products>
+          <Products>
+            <Imaged src="/product/3.2.webp" />
+            <ProductInfo>Som</ProductInfo>
+            <Prise>KRW 30,000</Prise>
+          </Products>
+          <Products>
+            <Imaged src="/product/3.3.webp" />
+            <ProductInfo>Maum</ProductInfo>
+            <Prise>KRW 30,000</Prise>
+          </Products>
+          <Products>
+            <Imaged src="/product/3.4.webp" />
+            <ProductInfo>Bangwool</ProductInfo>
+            <Prise>KRW 30,000</Prise>
+          </Products>
+        </Div>
+        <Div>
+          <Products>
+            <Imaged src="/product/3.4.webp" />
+            <ProductInfo>Bangwool</ProductInfo>
+            <Prise>KRW 30,000</Prise>
+          </Products>
+          <Products>
+            <Imaged src="/product/3.3.webp" />
+            <ProductInfo>Maum</ProductInfo>
+            <Prise>KRW 30,000</Prise>
+          </Products>
+          <Products>
+            <Imaged src="/product/3.2.webp" />
+            <ProductInfo>Som</ProductInfo>
+            <Prise>KRW 30,000</Prise>
+          </Products>
+          <Products>
+            <Imaged src="/product/3.1.webp" />
+            <ProductInfo>Yang</ProductInfo>
+            <Prise>KRW 63,000</Prise>
+          </Products>
+        </Div>
+      </div>
+      <Footer />
+    </div>
   );
 }
 
-const Smooch = styled.div`
-  margin-right: 45vw;
-  font-size: 7rem;
-  margin-left: 5vw;
-`;
-
-const Wrap = styled.div`
-  width: 95vw;
-  position: fixed;
-  z-index: 1000;
-`;
-
-const Login = styled.div`
-  color: #334fb4;
-  font-size: 1rem;
-  font-family: "Jura";
-  font-style: normal;
-  font-weight: 300;
-  :hover {
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-`;
-
-const Title = styled.div`
+const Div = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2vw;
-  align-items: flex-end;
-  color: #334fb4;
+  /* overflow: scroll;s */
+  margin: 0 auto;
+  width: 90vw;
+  height: 40vh;
+  margin-bottom: 130px;
 `;
 
-const SubTitle = styled.div`
+const Products = styled.div`
   display: flex;
-  flex-direction: row;
-  gap: 9vw;
-  padding: 1vw;
-  margin-left: 6vw;
-  color: #334fb4;
-  font-family: "Jura";
-  font-style: normal;
-`;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
 
-const Shop = styled.div`
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-family: "Jura";
-  font-style: normal;
   :hover {
-    font-size: 2rem;
-    font-weight: 600;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-`;
-
-const Category = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 1.4vw;
-  padding: 0.5vw;
-  margin-left: 6.5vw;
-  :hover {
-    color: tomato;
+    scale: 1.1;
     transition: 0.4s;
-    cursor: pointer;
   }
 `;
 
-const Part = styled.div`
-  font-size: 1.2rem;
-  font-weight: 200;
+const Imaged = styled.img`
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  margin: auto;
+  vertical-align: middle;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 10px;
+  /* border: 0.1px solid #334fb431; */
+`;
+
+const ProductInfo = styled.div`
   color: #334fb4;
+  font-size: 30px;
+  margin-bottom: 5px;
   :hover {
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 37px;
+    font-weight: 400;
     transition: 0.6s;
-    cursor: pointer;
+    color: tomato;
   }
+`;
+
+const Prise = styled.div`
+  font-size: 16px;
+  font-weight: 300;
+  color: #334fb4;
 `;

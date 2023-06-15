@@ -17,7 +17,8 @@ export default function Home() {
 
 const Wrap = styled.div`
   width: 100vw;
-  height: 220px;
+  height: 280px;
+  object-fit: fill;
 `;
 
 const Div = styled.img`
