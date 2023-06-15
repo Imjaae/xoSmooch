@@ -128,6 +128,8 @@ const Div = styled.div`
   width: 90vw;
   height: 40vh;
   margin-bottom: 130px;
+  font-family: "Jura", sans-serif;
+  font-style: normal;
 `;
 
 const Products = styled.div`

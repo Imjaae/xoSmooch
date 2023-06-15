@@ -1,7 +1,7 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 export default function Part2() {
@@ -128,6 +128,8 @@ const Div = styled.div`
   width: 90vw;
   height: 40vh;
   margin-bottom: 130px;
+  font-family: "Jura", sans-serif;
+  font-style: normal;
 `;
 
 const Products = styled.div`

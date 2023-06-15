@@ -66,6 +66,8 @@ export default function Part1() {
 
 const DetailWrap = styled.div`
   padding: 100px 0 150px 0px;
+  font-family: "Jura", sans-serif;
+  font-style: normal;
 `;
 
 const Product = styled.div`
@@ -149,6 +151,7 @@ const TextInfo = styled.div`
   :hover {
     font-size: 20px;
     font-weight: 400;
+    transition: 0.5s;
   }
 `;
 
@@ -181,6 +184,7 @@ const Quantity = styled.div`
   :hover {
     font-size: 23px;
     font-weight: 400;
+    transition: 0.5s;
   }
 `;
 
@@ -200,6 +204,7 @@ const Buy = styled.div`
     color: white;
     font-weight: 500;
     font-size: 28px;
+    transition: 0.5s;
   }
 `;
 
@@ -221,6 +226,10 @@ const Details = styled.img`
   width: 30%;
   object-fit: contain;
   padding: 1%;
+  :hover {
+    scale: 1.05;
+    transition: 0.5s;
+  }
 `;
 
 const Imges = styled.div`
