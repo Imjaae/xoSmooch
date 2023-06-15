@@ -1,22 +1,20 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useTransition } from "react";
 import styled from "styled-components";
 
 export default function Header() {
   const [isHover, setIsHover] = useState(false);
+
+  const Change = () => {
+    setIsHover(!isHover);
+  };
 
   return (
     <Wrap>
       <HeaderWrap>
         <CategoryWrap>
           <SubTitle>
-            <Shop
-              onClick={() => {
-                setIsHover(!isHover);
-              }}
-            >
-              Shop
-            </Shop>
+            <Shop onClick={Change}>Shop</Shop>
             <Shop>Contact</Shop>
           </SubTitle>
           <Category>
@@ -167,7 +165,7 @@ const Shop = styled.div`
   font-family: "Jura";
   font-style: normal;
   :hover {
-    font-size: 1.86rem;
+    font-size: 1.9rem;
     font-weight: 600;
     transition: 0.5s;
     cursor: pointer;

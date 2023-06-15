@@ -44,6 +44,8 @@ const Div = styled.div`
   flex-direction: column;
   margin: 0 auto;
   width: 90vw;
+  font-family: "Jura", sans-serif;
+  font-style: normal;
 `;
 
 const Products = styled.div`
