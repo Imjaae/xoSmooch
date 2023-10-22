@@ -29,7 +29,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/pages/part1.ㅅsx"
+    "src/pages/part1.ㅅsx",
+    "src/pages/contact.jsx"
   ],
   "exclude": ["node_modules"]
 }
