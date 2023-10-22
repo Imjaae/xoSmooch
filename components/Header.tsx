@@ -3,10 +3,10 @@ import React, { useState, useTransition } from "react";
 import styled from "styled-components";
 
 export default function Header() {
-  const [isHover, setIsHover] = useState(false);
+  const [isSearch, setIsSearch] = useState(false);
 
   const Change = () => {
-    setIsHover(!isHover);
+    setIsSearch(!isSearch);
   };
 
   return (
@@ -14,55 +14,25 @@ export default function Header() {
       <HeaderWrap>
         <CategoryWrap>
           <SubTitle>
-            <Shop onClick={Change}>Shop</Shop>
-            <Shop>Contact</Shop>
+            <Link
+              href="/part1"
+              style={{
+                textDecoration: "none",
+                color: "#334fb4",
+              }}
+            >
+              <Shop>Shop</Shop>
+            </Link>
+            <Link
+              href="/contact"
+              style={{
+                textDecoration: "none",
+                color: "#334fb4",
+              }}
+            >
+              <Shop>Contact</Shop>
+            </Link>
           </SubTitle>
-          <Category>
-            {isHover ? (
-              <>
-                <Link
-                  href="/part1"
-                  style={{
-                    textDecoration: "none",
-                  }}
-                >
-                  <Part>part1</Part>
-                </Link>
-                <Link
-                  href="/part2"
-                  style={{
-                    textDecoration: "none",
-                  }}
-                >
-                  <Part>part2</Part>
-                </Link>
-                <Link
-                  href="/part3"
-                  style={{
-                    textDecoration: "none",
-                  }}
-                >
-                  <Part>part3</Part>
-                </Link>
-                <Link
-                  href="/part4"
-                  style={{
-                    textDecoration: "none",
-                  }}
-                >
-                  <Part>part4</Part>
-                </Link>
-                <Link
-                  href="/book"
-                  style={{
-                    textDecoration: "none",
-                  }}
-                >
-                  <Part>book</Part>
-                </Link>
-              </>
-            ) : null}
-          </Category>
         </CategoryWrap>
         <Title>
           <Link
@@ -72,11 +42,20 @@ export default function Header() {
               cursor: "pointer",
             }}
           >
-            <Smooch>Xo Smooch</Smooch>
+            <DivWrap>
+              <Smooch src="/Logo.png" />
+            </DivWrap>
           </Link>
         </Title>
         <LoginWrap>
-          <Login>search</Login>
+          {/* {isSearch ? (
+            <div>
+              <Login onClick={Change}>search</Login>
+            </div>
+          ) : (
+            <Login onClick={Change}>search</Login>
+          )} */}
+          <Login onClick={Change}>search</Login>
           <Login>login</Login>
           <Login>cart</Login>
         </LoginWrap>
@@ -99,12 +78,13 @@ const CategoryWrap = styled.div`
   height: 200px;
 `;
 
-const Smooch = styled.div`
-  font-size: 6vw;
-  font-family: "Jura";
-  font-style: normal;
-  font-weight: 400;
-  color: #334fb4;
+const DivWrap = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+
+const Smooch = styled.img`
+  width: 55%;
 `;
 
 const Wrap = styled.div`
@@ -164,6 +144,7 @@ const Shop = styled.div`
   font-weight: 400;
   font-family: "Jura";
   font-style: normal;
+  text-decoration: none;
   :hover {
     font-size: 1.9rem;
     font-weight: 600;
