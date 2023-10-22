@@ -19,18 +19,18 @@ export default function Part1() {
             <Plus>Tax included. Shipping calculated at checkout</Plus>
             <Category>Size</Category>
             <Box>
-              <TextInfo>Queen - Uavailable</TextInfo>
+              <TextInfo>Queen - Available</TextInfo>
               <Arrow src="/arrow.png" />
             </Box>
-            <Category>Main Colour</Category>
+            <Category>Main Color</Category>
             <Box>
-              <TextInfo>Baby Blue - Uavailable</TextInfo>
+              <TextInfo>Baby Blue - Available</TextInfo>
               <Arrow src="/arrow.png" />
             </Box>
-            <Category>Tip Colour</Category>
+            <Category>Tip Color</Category>
             <Box>
-              <TextInfo>Baby Blue - Uavailable</TextInfo>
-              <Arrow src="/arrow.png" />
+              <TextInfo>Baby Blue - Available</TextInfo>
+              {/* <Arrow src="/arrow.png" /> */}
             </Box>
             <Category>Quantity</Category>
             <Box2>
@@ -82,7 +82,7 @@ const ImgWrap = styled.div`
 `;
 
 const ProductImg = styled.img`
-  width: 90%;
+  width: 61%;
   object-fit: contain;
   :hover {
     scale: 1.1;

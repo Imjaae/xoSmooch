@@ -19,7 +19,7 @@ const Wrap = styled.div`
   z-index: 1000;
   display: flex;
   flex-direction: row;
-  box-shadow: inset 0px 3px 60px rgba(0, 0, 0, 0.05);
+  /* box-shadow: inset 0px 3px 60px rgba(0, 0, 0, 0.05); */
 `;
 
 const FooterTitle = styled.div`
