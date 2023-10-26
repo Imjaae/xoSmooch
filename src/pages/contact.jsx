@@ -43,6 +43,7 @@ const Wrap = styled.div`
   width: 100vw;
   height: 213px;
   object-fit: fill;
+  margin-bottom: 74px;
 `;
 
 const DivWrap = styled.div`
